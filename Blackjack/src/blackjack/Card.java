@@ -1,6 +1,6 @@
 package blackjack;
 
-//(Eric Taylor, 5/6/22, P.1, Card class used to create a card, or multiple cards, in order to create a deck class that functions with proper values and faces/suits)
+// card class used to create a card, or multiple cards, in order to create a deck class that functions with proper values and faces/suits
 public class Card {
 // the suit of the card
 private int suit;
