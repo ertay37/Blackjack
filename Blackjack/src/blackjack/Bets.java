@@ -1,6 +1,6 @@
 package blackjack;
 
-//(Eric Taylor, 5/6/22, P.1, Bets class is used to extend the player class in order to allow them to place bets)
+// bets class is used to extend the player class in order to allow them to place bets
 public class Bets extends Player {
 // the number that correlates to the player who is putting in their bets
 int playerNumber = 0;
