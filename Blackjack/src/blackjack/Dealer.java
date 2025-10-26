@@ -122,7 +122,7 @@ public String hit(Deck d) {
   hit = c.toString();
   int value = c.getFaceNumber();
 
-  // Treat Ace as 11 initially
+  // treat Ace as 11 initially
   if (value == 1) {
     value = 11;
   }
@@ -131,7 +131,7 @@ public String hit(Deck d) {
   dealerCount += value;
   list.add(value);
 
-  // Adjust any 11s (Aces) to 1 if over 21
+  // adjust any 11s (aces) to 1 if over 21
   for (int i = 0; i < list.size(); i++) {
     if (dealerCount > 21 && list.get(i) == 11) {
       list.set(i, 1);
