@@ -1,6 +1,6 @@
 package blackjack;
 
-//(Eric Taylor, 5/6/22, P.1, Deck class used to create a deck, or multiple decks, that will be utilized in order to create a dealer class or to be utilized in other classes)
+// deck class used to create a deck, or multiple decks, that will be utilized in order to create a dealer class or to be utilized in other classes
 import java.util.ArrayList;
 
 public class Deck {
