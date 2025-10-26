@@ -19,7 +19,7 @@ public class Main {
       }
     }
 
-    // Initial player setup
+    // initial player setup
     System.out.println("\nEach player starts with $5000.");
     ArrayList<Player> players = new ArrayList<>();
     for (int i = 0; i < numPlayers; i++) {
@@ -38,7 +38,7 @@ public class Main {
 
       ArrayList<Bets> bets = new ArrayList<>();
 
-      // Re-deal new hands to players (replacing Player objects but keeping their
+      // re-deal new hands to players (replacing Player objects but keeping their
       // money)
 
       for (int i = 0; i < numPlayers; i++) {
@@ -57,7 +57,7 @@ public class Main {
           amount = scan.nextInt();
         }
 
-        // Deal cards after bet
+        // deal cards after bet
         Card c1 = deck.drawCard();
         Card c2 = deck.drawCard();
         Player p = new Player(c1, c2, balance - amount);
@@ -67,11 +67,11 @@ public class Main {
         System.out.println("Player " + (i + 1) + "'s hand: " + p.getCards() + " | Count: " + p.getCount());
       }
 
-      // Dealer setup
+      // dealer setup
       Dealer dealer = new Dealer(deck);
       System.out.println("\nDealer shows: " + dealer.getKnown());
 
-      // Player turns
+      // player turns
       for (int i = 0; i < numPlayers; i++) {
         Player p = players.get(i);
         System.out.println("\nPlayer " + (i + 1) + "'s turn.");
@@ -99,7 +99,7 @@ public class Main {
         }
       }
 
-      // Dealer turn
+      // dealer turn
       System.out.println("\nDealer reveals: " + dealer.getCards() + " | Count: " + dealer.getCount());
 
       while (dealer.getCount() < 17) {
@@ -112,7 +112,7 @@ public class Main {
         System.out.println("Dealer busts!");
       }
 
-      // Determine winners
+      // determine winners
       for (int i = 0; i < numPlayers; i++) {
         Player p = players.get(i);
         Bets b = bets.get(i);
