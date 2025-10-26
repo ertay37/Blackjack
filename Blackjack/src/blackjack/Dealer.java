@@ -1,7 +1,7 @@
 package blackjack;
 
 
-//((Eric Taylor, 5/6/22, P.1, Dealer class used to carry out dealer actions such as dealing and displaying cards))
+// dealer class used to carry out dealer actions such as dealing and displaying cards
 import java.util.ArrayList;
 
 public class Dealer {
